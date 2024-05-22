@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de rendimientos del sistema mamposteria">
+    <meta name="keywords" content="construccion, sistemas constructivos, mamposteria, rendimientos, materiales, calculadora.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/logo/icon1.png">
+    <title>Calculadora de construccion</title>
+</head>
+<body>
+    <header>
+        <div class="header__rrss">
+            <div class="header__rrssDescription">
+                <h4>Seguinos en Nuestras Redes</h4>
+            </div>
+            <div class="header__rrssImages">
+                <a href="https://instagram.com" target="_blank" rel="nopener noreferrer"><img src="../imagenes/iconos_rrss/instagram.png"  alt="instagram"></a>
+                <a href="https://youtube.com" target="_blank" rel="nopener noreferrer"><img src="../imagenes/iconos_rrss/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menuLogo">
+                <a href="../index.html"><img src="../imagenes/logo/RENDIT-03.png" alt="logo Rendit"></a>
+            </div>
+            <ul class="header__menuItems">
+                <li>
+                    <a href="../index.html">RENDIMIENTOS</a>
+                    <span><img src="../imagenes/iconos/flecha.png" alt="icono flecha"></span>
+                </li>
+                <li><a href="../page__blog/blog.html">BLOG</a></li>
+                <li><a href="../page__contacto/contacto.html">CONTACTO</a></li>
+            </ul>
+            <div class="header__menuRegistration">
+                <div class="header__menuRegistrationButton1">
+                    <h2>INGRESAR</h2>
+                </div>
+                <div class="header__menuRegistrationButton2">
+                    <h2>REGISTRATE</h2>
+                </div>
+            </div>
+            <div class="header__menuHamburguesa">
+                <span class="header__menuHamburguesa-line1"></span>
+                <span class="header__menuHamburguesa-line2"></span>
+                <span class="header__menuHamburguesa-line3"></span>
+            </div>
+        </div>
+        <div class="header__menuItemsFlecha">
+            <a href="../page__cimiento/cimientos.html">CIMIENTOS</a>
+            <a href="../page__mamposteria/mamposteria.html">MAMPOSTERIA</a>
+            <a href="../page__entrepisos/entrepisos.html">ENTREPISOS</a>
+            <a href="../page__estructurasHormigon/estructurasHormigon.html">ESTRUCTURA HORMIGON ARMADO</a>
+            <a href="../page__revestimientos/revestimientos.html">REVESTIMIENTOS</a>
+            <a href="../page__stellFraming/stellFramming.html">STELL FRAMING</a>
+            <a href="../page__panelEps/panelEps.html">PANEL EPS</a>
+        </div>
+    </header>
+    <main>
+        <h1>MAMPOSTERIA</h1>
+        <h3>ELIJE EL SISTEMA CONSTRUCTIVO A UTILIZAR</h3>
+        <form id="idForm" action="">
+        <div class="main__items">
+            <div class="main__itemsSistems">
+                <img src="../imagenes/elementos_constructivos/mamposteria/muro comun .png" alt="sistema constructivo: muro comun">
+                <div class="main__itemsSistemsInput">
+                    <input id="btn-ladrillonSoga" type="radio" name="sistema" value="ladrillonSoga">
+                    <h2>LADRILLON DE SOGA</h2>
+                </div>
+            </div>
+            <div class="main__itemsSistems">
+                <img src="../imagenes/elementos_constructivos/mamposteria/muro panderete.png" alt="sistema constructivo: muro panderete">
+                <div class="main__itemsSistemsInput">
+                    <input id="btn-ladrillonPanderete" type="radio" name="sistema" value="ladrillonPanderete">
+                    <h2>LADRILLON DE PANDERETE</h2>
+                </div>
+            </div>
+            <div class="main__itemsSistems">
+                <img src="../imagenes/elementos_constructivos/mamposteria/muro de bloque.png" alt="sistema constructivo: muro de bloques de hormigon">
+                <div class="main__itemsSistemsInput">
+                    <input id="btn-bloqueHormigon" type="radio" name="sistema" value="bloqueHormigon">
+                    <h2>BLOQUE DE HORMIGON</h2>
+                </div>
+            </div>
+        </div>
+        <h3>DIMENSIONES</h3>
+        <div class="main__dimensions">
+            <div class="main__dimensionsItem">
+                <label for="dimensions">ALTO</label>
+                <input id="alto" type="text" name="alto">
+                <h4>METROS</h4>
+            </div>
+            <div class="main__dimensionsItem">
+                <label for="dimensions">LARGO</label>
+                <input id="largo" type="text" name="largo">
+                <h4>METROS</h4>
+            </div>
+        </div>
+        <h3>ABERTURAS</h3>
+        <div class="main__dimensions">
+            <img src="../imagenes/elementos_constructivos/mamposteria/muro con ventana.png" alt="muro con abertura">
+            <div class="main__dimensionsItem">
+                <label for="dimensions">CANTIDAD</label>
+                <input id="cantidadAbertura" type="text" name="alto">
+                <h4>UNIDAD</h4>
+            </div>
+            <div class="main__dimensionsItem">
+                <label for="dimensions">ALTO</label>
+                <input id="altoAbertura" type="text" name="ancho">
+                <h4>METROS</h4>
+            </div>
+            <div class="main__dimensionsItem">
+                <label for="dimensions">LARGO</label>
+                <input id="largoAbertura" type="text" name="largo">
+                <h4>METROS</h4>
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="btn">
+                <input id="btn-calcular" class="btn__submit" type="submit" value="CALCULAR">
+            </div> 
+        </div>
+        </form>
+        <div class="main__container">
+            <div class="resume">
+                <div class="resume__resultado">
+                    <h2>RESUMEN</h2>
+                    <div class="resume__text">
+                    </div>
+                    <div class="resume__textPrice">
+                    </div>
+                </div>
+                <div class="resume__historial">
+                    <div class="btn">
+                        <input id="btn-calcular2" class="btn__submit2" type="submit" value="HISTORIAL">
+                    </div>
+                    <div class="resume__text2">
+                    </div>
+                    <div class="resume__text3">
+                    </div>
+                    <div class="btn">
+                        <input id="btn-calcular3" class="btn__submit2" type="submit" value="BORRAR">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <main>
+    <footer>
+            <div class="footer__information">
+                <h4>MENDOZA</h4>
+                <h4>Calle Huarpes 101, Ciudad</h4>
+                <h5>Diseño web - Esteban suarez</h5>
+            </div>
+            <div class="footer__logo">
+                <a href="../index.html"><img src="../imagenes/logo/RENDIT-03.png" alt="logo Rendit"></a>
+            </div>
+            <div class="footer__contact">
+                <h4>Quieres trabajar con nosotros?</h4>
+                <h4>Contactate con uno de nuestros consultores</h4>
+                <h5>Rendit@gmail.com</h5>                
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/header.js"></script> 
+    <script src="../js/mamposteria.js"></script> 
+</body>
+</html>
